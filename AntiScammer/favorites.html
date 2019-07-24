@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorites</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <div id="wrapper1" class="bg-primary text-light font-weight-normal"
+        style="margin: 0; padding-bottom:0; padding-top:5;">
+        <div id="second3" style="font-size: 32px; padding-left: 28%; padding-bottom:8px;">Favorites</div>
+        <div id="first3"><a class="text-light font" href='index.html'><i class="fa fa-angle-left font-weight-bold"
+                    style="font-size: 40px;"></i>
+            </a></div>
+    </div>
+
+    <p>
+        <div class="card center text-white bg-primary" data-toggle="modal" data-target="#editModal" style="width: 90%;">
+            <img class="card-img-top-fav center " src="Places/brno3.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="font-weight-bold card-text font">Exchange Place 1
+                </h5>
+                <div class="overflow: hidden;" style="padding:0px">
+                    <i class=" fa fa-map-marker" aria-hidden="true"
+                        style="font-size: 30px; float:left; padding-right:8px"></i>
+                    <h5 class=" card-text font">Kolejni 2,
+                        612 00 Brno
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </p>
+
+    <p>
+        <div class="card center text-white bg-primary" data-toggle="modal" data-target="#editModal" style="width: 90%;">
+            <img class="card-img-top-fav center" src="Places/brno2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="font-weight-bold card-text font">Exchange Place 2
+                </h5>
+                <div class="overflow: hidden;" style="padding:0px">
+                    <i class=" fa fa-map-marker" aria-hidden="true"
+                        style="font-size: 30px; float:left; padding-right:8px"></i>
+                    <h5 class=" card-text font">Kolejni 2,
+                        612 00 Brno
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </p>
+
+    <p>
+        <div class="card center text-white bg-primary" data-toggle="modal" data-target="#editModal" style="width: 90%;">
+            <img class="card-img-top-fav center " src="Places/brno1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="font-weight-bold card-text font">Exchange Place 3
+                </h5>
+                <div class="overflow: hidden;" style="padding:0px">
+                    <i class=" fa fa-map-marker" aria-hidden="true"
+                        style="font-size: 30px; float:left; padding-right:8px"></i>
+                    <h5 class=" card-text font">Kolejni 2,
+                        612 00 Brno
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </p>
+
+    <!--Modal Edit Favorute-->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-primary">
+                    <h5 class="modal-title center" id="exampleModalCenterTitle" style="font-size:30px;">
+                        Edit Exchange Place 1
+                    </h5>
+                    <!-- <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span> -->
+                    <!-- </button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="usr" class="font-weight-bold" style="font-size:20px;">Name</label>
+                        <input type="text" class="form-control" id="usr" placeholder="Exchange Place 1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="usr" class="font-weight-bold" style="font-size:20px;">Photo</label>
+                        <div class="card center" style="padding:2%;">
+                            <img class="card-img-top-fav center" src="Places/brno3.jpg" alt="Card image cap"
+                                style="max-height:160px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="usr" class="font-weight-bold" style="font-size:20px;">Location</label>
+                        <div class="card center" style="padding:2%;">
+                            <img class="center" src="Icons/placeholder.png"
+                                style="width:30%; height:auto; padding-top:10%; padding-bottom:10%; max-height:160px;">
+                        </div>
+                    </div>
+                    <div style="padding-top:2%;">
+                        <button type="button" class="btn btn-danger btn-lg btn-block"
+                            onclick="deleteFavorite()">Delete</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-lg btn-primary" onclick="applyFav()">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
